@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/Montserrat-Black.eot");
@@ -96,10 +92,6 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 }
 mark {
   background: #ff0;
@@ -254,11 +246,7 @@ body {
   width: 100%;
   height: 100vh;
   box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
-<<<<<<< Updated upstream
-  overflow: hidden;
-=======
   
->>>>>>> Stashed changes
 }
 .l-wrapper {
   position: relative;
@@ -312,14 +300,11 @@ body {
   width: 100%;
   height: 100%;
 }
-<<<<<<< Updated upstream
-=======
 .section > h1{
   margin-left: 200px;
   margin-top: 100px;
 }
 
->>>>>>> Stashed changes
 .device-notification {
   display: none;
   position: fixed;
@@ -1035,9 +1020,6 @@ body {
     display: none;
   }
 }
-<<<<<<< Updated upstream
-.about {
-=======
 
 
 .modal {
@@ -1090,33 +1072,11 @@ body {
 
 .about {
 
->>>>>>> Stashed changes
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< Updated upstream
-  width: 900px;
-  max-width: 75%;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0 auto;
-  
-}
-@media (max-width: 1180px) {
-  .about {
-    max-width: 100%;
-  }
-=======
   align-self: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1183,7 +1143,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
->>>>>>> Stashed changes
 }
 .about--banner {
   position: relative;
@@ -1196,11 +1155,7 @@ body {
   left: 200px;
   -webkit-transform: rotate(-25deg);
   transform: rotate(-25deg);
-<<<<<<< Updated upstream
-  border: 5px solid #0f33ff;
-=======
   border: 5px solid #c99531;
->>>>>>> Stashed changes
   border-right-color: transparent;
   border-bottom-color: transparent;
 }
@@ -1213,11 +1168,7 @@ body {
   transform: rotate(45deg);
   width: 10px;
   height: 10px;
-<<<<<<< Updated upstream
-  background-color: #0f33ff;
-=======
   background-color: #c99531;
->>>>>>> Stashed changes
 }
 .about--banner h2 {
   position: relative;
@@ -1234,11 +1185,7 @@ body {
   left: 268px;
   width: 30px;
   height: 30px;
-<<<<<<< Updated upstream
-  background-color: #0f33ff;
-=======
   background-color: #c99531;
->>>>>>> Stashed changes
   border-radius: 50%;
 }
 .about--banner h2::after {
@@ -1248,11 +1195,7 @@ body {
   left: 255px;
   width: 10px;
   height: 10px;
-<<<<<<< Updated upstream
-  background-color: #0f33ff;
-=======
   background-color: #c99531;
->>>>>>> Stashed changes
 }
 .about--banner a {
   padding: 5px 17px 5px 0;
@@ -1278,55 +1221,32 @@ body {
   bottom: -90px;
   right: -12px;
 }
-<<<<<<< Updated upstream
-.about--options {
-  
-=======
 
 .about--options {
   align-items: center;
->>>>>>> Stashed changes
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< Updated upstream
-  flex-direction: row;
-=======
   flex-direction: column;
->>>>>>> Stashed changes
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-<<<<<<< Updated upstream
-  margin: 0;
-  padding: 0;
-  padding-bottom: 30px;
-=======
   
   padding-top: 50px;
   padding-right: 20px;
->>>>>>> Stashed changes
   
   list-style: none;
 }
 .about--options > a {
   
   position: relative;
-<<<<<<< Updated upstream
-  width: 170px;
-  height: 100px;
-  text-decoration: none;
-  color: #fff;
-  border: 10px solid #0f33ff;
-=======
   width: 230px;
   height: 180px;
   text-decoration: none;
   color: #fff;
   border: 5px solid #c99531;
->>>>>>> Stashed changes
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1415,15 +1335,12 @@ body {
     display: none;
   }
   
-<<<<<<< Updated upstream
-=======
   .section > h1{
     margin-left: 20px;
     margin-top: 100px;
   }
   
 
->>>>>>> Stashed changes
 .about--options {
  
   display: -webkit-box;
@@ -1437,30 +1354,18 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 20px;
-<<<<<<< Updated upstream
-  padding-bottom: 30px;
-=======
   padding-top: 0px;
   padding-bottom: 30px;
   flex-wrap: wrap;
->>>>>>> Stashed changes
 }
 .about--options > a {
   margin-top: 50px;
   position: relative;
-<<<<<<< Updated upstream
-  width: 250px;
-  height: 250px;
-  text-decoration: none;
-  color: #fff;
-  border: 10px solid #0f33ff;
-=======
   width: 210px;
   height: 250px;
   text-decoration: none;
   color: #fff;
   border: 5px solid #c99531;
->>>>>>> Stashed changes
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
