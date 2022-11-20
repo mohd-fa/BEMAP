@@ -246,7 +246,9 @@ body {
   width: 100%;
   height: 100vh;
   box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
+
   overflow: hidden;
+
 }
 .l-wrapper {
   position: relative;
@@ -300,6 +302,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .device-notification {
   display: none;
   position: fixed;
@@ -581,6 +584,7 @@ body {
 .side-nav li:nth-child(5)::before {
   content: "05";
 }
+
 .side-nav li.is-active {
   color: #0f33ff;
   -webkit-transition: color 0.4s ease-in-out;
@@ -733,6 +737,7 @@ body {
     margin-right: 0;
   }
 }
+
 @media (max-width: 767px) {
   .intro--banner {
     height: 305px;
@@ -756,6 +761,7 @@ body {
   }
 }
 @media (max-width: 600px) {
+
   .intro--banner {
     height: 360px;
   }
@@ -964,12 +970,15 @@ body {
     display: none;
   }
 }
+
 .about {
+
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   width: 900px;
   max-width: 75%;
   height: 100%;
@@ -988,6 +997,7 @@ body {
   .about {
     max-width: 100%;
   }
+
 }
 .about--banner {
   position: relative;
@@ -1000,7 +1010,10 @@ body {
   left: 200px;
   -webkit-transform: rotate(-25deg);
   transform: rotate(-25deg);
-  border: 5px solid #0f33ff;
+
+  border: 5px solid #c99531;
+
+
   border-right-color: transparent;
   border-bottom-color: transparent;
 }
@@ -1013,7 +1026,10 @@ body {
   transform: rotate(45deg);
   width: 10px;
   height: 10px;
-  background-color: #0f33ff;
+
+  background-color: #c99531;
+
+
 }
 .about--banner h2 {
   position: relative;
@@ -1030,7 +1046,9 @@ body {
   left: 268px;
   width: 30px;
   height: 30px;
-  background-color: #0f33ff;
+
+  background-color: #c99531;
+
   border-radius: 50%;
 }
 .about--banner h2::after {
@@ -1040,7 +1058,9 @@ body {
   left: 255px;
   width: 10px;
   height: 10px;
-  background-color: #0f33ff;
+
+  background-color: #c99531;
+
 }
 .about--banner a {
   padding: 5px 17px 5px 0;
@@ -1066,16 +1086,21 @@ body {
   bottom: -90px;
   right: -12px;
 }
+
 .about--options {
+
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   max-width: 600px;
+
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1087,6 +1112,7 @@ body {
   text-decoration: none;
   color: #fff;
   border: 10px solid #0f33ff;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1100,6 +1126,7 @@ body {
 .about--options > a:nth-child(3) {
   background-image: url("../img/about-history.jpg");
 }
+
 .about--options > a:hover h3 {
   bottom: -50px;
 }
@@ -1165,9 +1192,11 @@ body {
   .about--banner img {
     display: none;
   }
+
   .about--options {
     display: none;
   }
+
 }
 .contact {
   position: fixed;
@@ -1544,9 +1573,11 @@ body {
   visibility: hidden;
   -webkit-transition: visibility 0s 0.2s;
   transition: visibility 0s 0.2s;
+
   list-style-type: none;
   padding: 0;
   
+
 
 }
 .outer-nav.is-vis {
@@ -1591,6 +1622,7 @@ body {
 .outer-nav > li::before {
   content: "";
   position: absolute;
+
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -25%);
@@ -1601,6 +1633,7 @@ body {
   padding:8px 16px;
   border: 3px solid #0f33ff;
   
+
 }
 .outer-nav > li.is-active::before {
   opacity: 1;
@@ -1631,6 +1664,7 @@ body {
   -webkit-transition-delay: 0.16s;
   transition-delay: 0.16s;
 }
+
 .beemap{
     position: relative;
     top:15%;
@@ -1643,5 +1677,6 @@ body {
   width:fit-content;
   height:fit-content;
 }
+
 
 
