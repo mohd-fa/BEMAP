@@ -1214,7 +1214,10 @@ body {
     padding: 0;
     list-style: none
 }
-
+.about--options img{
+    width: 200px;
+    height: 200px;
+}
 .about--options>a {
     position: relative;
     width: 200px;
@@ -1231,13 +1234,6 @@ body {
     background-image: url("../img/coming\ soon.webp")
 }
 
-.about--options>a:nth-child(2) {
-    background-image: url("../img/about-philosophy.jpg")
-}
-
-.about--options>a:nth-child(3) {
-    background-image: url("../img/about-history.jpg")
-}
 
 .about--options>a:hover h3 {
     bottom: -50px
@@ -1698,6 +1694,7 @@ body {
         height: 40px;
         font-size: 24px
     }
+    
 }
 
 .perspective {
@@ -1722,7 +1719,8 @@ body {
     -webkit-transition: -webkit-transform .4s;
     transition: -webkit-transform .4s;
     transition: transform .4s;
-    transition: transform .4s, -webkit-transform .4s
+    transition: transform .4s, -webkit-transform .4s;
+   
 }
 
 .modalview .container {
@@ -1839,7 +1837,16 @@ body {
 @media (max-width: 600px) {
     .outer-nav>li {
         font-size: 34px;
-        
+        float: right;
+    }
+    .outer-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       left: 0px;
+       margin-left:90px;
+
     }
     
 }

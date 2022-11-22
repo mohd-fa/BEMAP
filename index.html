@@ -23,30 +23,30 @@
 </div>
 
 <div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
+  <div class="container" id="mainitem"><div class="outer-nav--return"></div>
     <div id="viewport" class="l-viewport">
       <div class="l-wrapper">
         <header class="header">
           <a class="header--logo" href="#0">
             <img src="assets/img/csilogo.png" class="csilogo" alt="CSILOGO">
           </a>
-          <div class="header--nav-toggle">
+          <div class="header--nav-toggle" onclick="openHam('open')">
             <span></span>
           </div>
         </header>
         <nav class="l-side-nav">
           <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
+            <li class="is-active"><span >Home</span></li>
             <li><span>Workshops</span></li>
-            <li style="
+            <li  style="
             position: relative;
             top: 15px;
         "><span style="
     position: relative;
     top: -15px;
 ">Competitions</span></li>
-            <li><span>Contact</span></li>
-            <li><span>About Us</span></li>
+            <li ><span >Contact</span></li>
+            <li ><span>About Us</span></li>
           </ul>
         </nav>
         <ul class="l-main-content main-content">
@@ -74,6 +74,7 @@
                     <div class="about--options">
                       
                       <a href="#0"> 
+                        <img src="./assets/img/about-philosophy.jpg">
                         <h3>Register</h3>
                       </a>
                     </div>
@@ -200,16 +201,30 @@
     </div>
   </div>
   <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Workshops</li>
-    <li>Competitions</li>
-    <li>Contact</li>
-    <li>About Us</li>
+    <li onclick="openHam('close')" class="is-active">Home</li>
+    <li onclick="openHam('close')">Workshops</li>
+    <li onclick="openHam('close')">Competitions</li>
+    <li onclick="openHam('close')">Contact</li>
+    <li onclick="openHam('close')">About Us</li>
   </ul>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
+<script>
+  function openHam(props){
+    console.log(props,screen.width);
+    var get_main_container = document.getElementById("mainitem");
+    if(screen.width<=600 && props=='open'){
+      //mobile screen 
+      
+      get_main_container.style.display="none";
+    }
+    if(props=='close'){
+      get_main_container.style.display="contents";
+    }
+  }
+</script>
 </body>
 </html>
