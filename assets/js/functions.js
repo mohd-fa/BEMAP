@@ -43,7 +43,7 @@ $( document ).ready(function() {
           curPos = $this.parent().children().index(curActive),
           nextPos = $this.parent().children().index($this),
           lastItem = $(this).parent().children().length - 1;
-      
+
       updateNavs(nextPos);
       updateContent(curPos, nextPos, lastItem);
 
