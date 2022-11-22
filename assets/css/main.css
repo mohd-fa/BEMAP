@@ -885,10 +885,7 @@ body {
     justify-content: center;
     margin: 0 auto
 }
-.workshops-head{
-    position: relative;
-    left: 50px;
-}
+
 
 .workshops{
     display: grid;
@@ -1214,7 +1211,10 @@ body {
     padding: 0;
     list-style: none
 }
-
+.about--options img{
+    width: 200px;
+    height: 200px ;
+}
 .about--options>a {
     position: relative;
     width: 200px;
@@ -1231,13 +1231,6 @@ body {
     background-image: url("../img/coming\ soon.webp")
 }
 
-.about--options>a:nth-child(2) {
-    background-image: url("../img/about-philosophy.jpg")
-}
-
-.about--options>a:nth-child(3) {
-    background-image: url("../img/about-history.jpg")
-}
 
 .about--options>a:hover h3 {
     bottom: -50px
@@ -1293,9 +1286,7 @@ body {
         height: auto
     }
 
-    .workshops-head{
-        left: 0px;
-    }
+    
 
     .workshops{
         grid-template-columns: auto auto;
