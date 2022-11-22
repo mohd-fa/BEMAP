@@ -1695,6 +1695,7 @@ body {
         height: 40px;
         font-size: 24px
     }
+    
 }
 
 .perspective {
@@ -1719,7 +1720,8 @@ body {
     -webkit-transition: -webkit-transform .4s;
     transition: -webkit-transform .4s;
     transition: transform .4s;
-    transition: transform .4s, -webkit-transform .4s
+    transition: transform .4s, -webkit-transform .4s;
+   
 }
 
 .modalview .container {
@@ -1839,7 +1841,12 @@ body {
         float: right;
     }
     .outer-nav{
-        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       left: 0px;
+       margin-left:90px;
     }
 }
 
