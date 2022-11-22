@@ -1212,8 +1212,8 @@ body {
     list-style: none
 }
 .about--options img{
-    width: 200px;
-    height: 200px ;
+    width: inherit;
+    height: inherit;
 }
 .about--options>a {
     position: relative;
