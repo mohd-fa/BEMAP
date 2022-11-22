@@ -1342,11 +1342,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/sct_map_satellite.png");
+    background-image: url("./../img/contact-visual.png");
     background-position: center;
     background-size:80vw;
     background-repeat: no-repeat;
-    background-color: #282828;
+    background-color: #000;
 }
 @media (max-width:600px){
   .contact{
