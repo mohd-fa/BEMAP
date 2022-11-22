@@ -1241,6 +1241,7 @@
           : $(".header--cta").removeClass("is-active");
     }
     function n() {
+      
       $(".header--nav-toggle").click(function () {
         $(".perspective").addClass("perspective--modalview"),
           setTimeout(function () {

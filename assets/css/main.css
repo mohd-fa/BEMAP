@@ -1662,6 +1662,9 @@ body {
 }
 
 @media (max-width: 600px) {
+    .hire{
+        font-size: smaller;
+    }
     .work-request--options {
         margin: 20px 0
     }
@@ -1847,7 +1850,9 @@ body {
         align-items: center;
        left: 0px;
        margin-left:90px;
+
     }
+    
 }
 
 .outer-nav li.is-vis:nth-child(2) {
