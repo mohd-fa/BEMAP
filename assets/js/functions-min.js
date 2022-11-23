@@ -1260,6 +1260,128 @@
         });
     }
     function s() {
+      $(".slider2--prev, .slider2--next").click(function () {
+        var t = $(this),
+          e = $(".slider2").find(".slider2--item-left"),
+          i = $(".slider2").children().index(e),
+          n = $(".slider2").find(".slider2--item-center"),
+          s = $(".slider2").children().index(n),
+          r = $(".slider2").find(".slider2--item-right"),
+          o = $(".slider2").children().index(r),
+          a = $(".slider2").children().length,
+          l = $(".slider2--item-left"),
+          c = $(".slider2--item-center"),
+          h = $(".slider2--item-right"),
+          u = $(".slider2--item");
+        $(".slider2").animate({ opacity: 0 }, 400),
+          setTimeout(function () {
+            t.hasClass("slider2--next")
+              ? a - 1 > i && a - 1 > s && a - 1 > o
+                ? (l
+                    .removeClass("slider2--item-left")
+                    .next()
+                    .addClass("slider2--item-left"),
+                  c
+                    .removeClass("slider2--item-center")
+                    .next()
+                    .addClass("slider2--item-center"),
+                  h
+                    .removeClass("slider2--item-right")
+                    .next()
+                    .addClass("slider2--item-right"))
+                : i === a - 1
+                ? (u
+                    .removeClass("slider2--item-left")
+                    .first()
+                    .addClass("slider2--item-left"),
+                  c
+                    .removeClass("slider2--item-center")
+                    .next()
+                    .addClass("slider2--item-center"),
+                  h
+                    .removeClass("slider2--item-right")
+                    .next()
+                    .addClass("slider2--item-right"))
+                : s === a - 1
+                ? (l
+                    .removeClass("slider2--item-left")
+                    .next()
+                    .addClass("slider2--item-left"),
+                  u
+                    .removeClass("slider2--item-center")
+                    .first()
+                    .addClass("slider2--item-center"),
+                  h
+                    .removeClass("slider2--item-right")
+                    .next()
+                    .addClass("slider2--item-right"))
+                : (l
+                    .removeClass("slider2--item-left")
+                    .next()
+                    .addClass("slider2--item-left"),
+                  c
+                    .removeClass("slider2--item-center")
+                    .next()
+                    .addClass("slider2--item-center"),
+                  u
+                    .removeClass("slider2--item-right")
+                    .first()
+                    .addClass("slider2--item-right"))
+              : 0 !== i && 0 !== s && 0 !== o
+              ? (l
+                  .removeClass("slider2--item-left")
+                  .prev()
+                  .addClass("slider2--item-left"),
+                c
+                  .removeClass("slider2--item-center")
+                  .prev()
+                  .addClass("slider2--item-center"),
+                h
+                  .removeClass("slider2--item-right")
+                  .prev()
+                  .addClass("slider2--item-right"))
+              : 0 === i
+              ? (u
+                  .removeClass("slider2--item-left")
+                  .last()
+                  .addClass("slider2--item-left"),
+                c
+                  .removeClass("slider2--item-center")
+                  .prev()
+                  .addClass("slider2--item-center"),
+                h
+                  .removeClass("slider2--item-right")
+                  .prev()
+                  .addClass("slider2--item-right"))
+              : 0 === s
+              ? (l
+                  .removeClass("slider2--item-left")
+                  .prev()
+                  .addClass("slider2--item-left"),
+                u
+                  .removeClass("slider2--item-center")
+                  .last()
+                  .addClass("slider2--item-center"),
+                h
+                  .removeClass("slider2--item-right")
+                  .prev()
+                  .addClass("slider2--item-right"))
+              : (l
+                  .removeClass("slider2--item-left")
+                  .prev()
+                  .addClass("slider2--item-left"),
+                c
+                  .removeClass("slider2--item-center")
+                  .prev()
+                  .addClass("slider2--item-center"),
+                u
+                  .removeClass("slider2--item-right")
+                  .last()
+                  .addClass("slider2--item-right"));
+          }, 400),
+          $(".slider2").animate({ opacity: 1 }, 400);
+      });
+
       $(".slider--prev, .slider--next").click(function () {
         var t = $(this),
           e = $(".slider").find(".slider--item-left"),
@@ -1384,6 +1506,14 @@
     }
     function r() {
       $(".work-request--information input").focusout(function () {
+        var t = $(this).val();
+        "" === t
+          ? $(this).removeClass("has-value")
+          : $(this).addClass("has-value"),
+          window.scrollTo(0, 0);
+      });
+
+      $(".work2-request--information input").focusout(function () {
         var t = $(this).val();
         "" === t
           ? $(this).removeClass("has-value")
