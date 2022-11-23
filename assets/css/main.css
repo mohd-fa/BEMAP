@@ -924,7 +924,7 @@ body {
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 5%;
     overflow: hidden
 }
 
