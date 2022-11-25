@@ -1344,7 +1344,7 @@ body {
 
 .work2--lockup .slider2--item-description {
     display: none;
-    max-width: 250px;
+    /* max-width: 250px; */
     margin: 0 auto
 }
 
