@@ -2034,11 +2034,7 @@ body {
     transition-delay: .16s
 }
 
-:root {
-    --clr-neon: hsl(317 100% 54%);
-    --clr-bg: hsl(323 21% 16%);
-  }
-  
+
   *,
   *::before,
   *::after {
@@ -2087,7 +2083,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 0 2em 0.5em #7a550d;
+    box-shadow: 0 0 .5em 0.125em #7a550d;
     opacity: 0;
     background-color: #7a550d;
     z-index: -1;
@@ -2096,7 +2092,7 @@ body {
   
   .neon-button:hover,
   .neon-button:focus {
-    color: var(--clr-bg);
+    color: hsl(323 21% 16%);
     text-shadow: none;
   }
   
