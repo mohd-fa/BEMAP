@@ -2075,6 +2075,22 @@ body {
     filter: blur(1em);
     opacity: 0.7;
   }
+
+  .neon-button-closed {
+    margin-top: 1rem;
+    font-size: 1rem;
+  
+    display: inline-block;
+    text-decoration: none;
+    background-color: #8d8c8c;
+    border: #3a3a3a 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+  
+    position: relative;
+  }
+
+  
   
   .neon-button::after {
     content: "";
@@ -2112,3 +2128,11 @@ body {
   .work2--lockup .slider2--item-left .neon-button{
     display: none;
   }
+
+  .work2--lockup .slider2--item-left .neon-button-closed{
+    display: none;
+  }
+  .work2--lockup .slider2--item-right .neon-button-closed{
+    display: none;
+  }
+  
