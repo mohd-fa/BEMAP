@@ -2033,3 +2033,110 @@ body {
     -webkit-transition-delay: .16s;
     transition-delay: .16s
 }
+
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  .neon-button {
+    margin-top: 1rem;
+    font-size: 1rem;
+  
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #7a550d;
+    border: #7a550d 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+  
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  
+    box-shadow: inset 0 0 0.5em 0 #7a550d, 0 0 0.5em 0 #7a550d;
+  
+    position: relative;
+  }
+  
+  .neon-button::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: #7a550d;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+
+  .neon-button-closed {
+    margin-top: 1rem;
+    font-size: 1rem;
+  
+    display: inline-block;
+    text-decoration: none;
+    background-color: #400;
+    border: #f00 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+  
+    position: relative;
+  }
+
+  
+  
+  .neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 .5em 0.125em #7a550d;
+    opacity: 0;
+    background-color: #7a550d;
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .neon-button:hover,
+  .neon-button:focus {
+    color: hsl(323 21% 16%);
+    text-shadow: none;
+  }
+  
+  .neon-button:hover::before,
+  .neon-button:focus::before {
+    opacity: 1;
+  }
+  .neon-button:hover::after,
+  .neon-button:focus::after {
+    opacity: 1;
+  }
+
+  .work2--lockup .slider2--item-right .neon-button{
+    display: none;
+  }
+
+  .work2--lockup .slider2--item-left .neon-button{
+    display: none;
+  }
+
+  .work2--lockup .slider2--item-left .neon-button-closed{
+    display: none;
+  }
+  .work2--lockup .slider2--item-right .neon-button-closed{
+    display: none;
+  }
+
+  a#close{
+    color: #f00;
+  }
+  
